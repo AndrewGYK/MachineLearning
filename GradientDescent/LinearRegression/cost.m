@@ -1,4 +1,4 @@
-function J = computeCost(X, y, theta)
+function J = cost(X, y, theta)
 
 	m = length(y);
 

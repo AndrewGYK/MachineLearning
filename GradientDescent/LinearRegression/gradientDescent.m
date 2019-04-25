@@ -2,7 +2,7 @@ function theta = gradientDescent(X, y, theta, alpha, num_iters)
 
 	m = length(y);
 
-	theta_s = theta;
+	theta_t = theta;
 
 	for iter = 1:num_iters
 
@@ -12,7 +12,7 @@ function theta = gradientDescent(X, y, theta, alpha, num_iters)
 
 		//theta(3)=  theta(3) - (alpha / m) * sum((X * theta_s - y) .* X(:,3));
 
-		theta_s = theta;
+		theta_t = theta;
 
 	end
 	
