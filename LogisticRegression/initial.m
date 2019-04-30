@@ -4,7 +4,7 @@ function [X,y,theta] = initial(data)
 	
 	y = data(:,3);
 
-	X = [ones(m,1),data(:,[1,2]];
+	X = [ones(m,1),data(:,[1,2])];
 
 	theta = zeros(n,1);
 
