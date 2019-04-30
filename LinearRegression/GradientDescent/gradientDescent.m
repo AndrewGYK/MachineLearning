@@ -6,9 +6,9 @@ function theta = gradientDescent(X, y, theta, alpha, num_iters)
 
 	for iter = 1:num_iters
 
-		theta(1) = theta(1) - (alpha / m) * sum(X * theta_s - y);
+		theta(1) = theta(1) - (alpha / m) * sum(X * theta_t - y);
 
-		theta(2) = theta(2) - (alpha / m) * sum((X * theta_s - y) .* X(:,2));
+		theta(2) = theta(2) - (alpha / m) * sum((X * theta_t - y) .* X(:,2));
 
 		//theta(3)=  theta(3) - (alpha / m) * sum((X * theta_s - y) .* X(:,3));
 
