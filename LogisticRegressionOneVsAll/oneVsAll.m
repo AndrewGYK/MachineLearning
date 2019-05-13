@@ -16,7 +16,7 @@ function [all_theta] = oneVsAll(X, y, num_labels, lambda)
 
 		y_t = (y==i)
 
-		all_theta(i,:) = fmincg(@(t)(lrCostFunction(t, X, y_t, 0.1)),initial_theta, options);
+		all_theta(i,:) = fminunc(@(t)(lrCostFunction(t, X, y_t, 0.1)),initial_theta, options);
 
 	end
 
