@@ -1,0 +1,4 @@
+When I compute the gradient, I use the statement like: grad=((X'*(sigmoid(X*theta)-y))+lambda*theta)/m. 
+But before this statement executed, I have assigned theta(1) to 0 for regularization.
+To address it, I use one variable h to save the original value of sigmoid(X*theta).
+After that, I compute the gradient with h. (grad=((X'*(h-y))+lambda*theta)/m) 
